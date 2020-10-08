@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'testProj';
+  title = 'Dynamic title';
+  number = 42;
+  arr = [1, 2, 3];
+
+  obj = {a: 1, b: 2, c: {d: 2}};
 }
