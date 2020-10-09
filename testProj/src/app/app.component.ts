@@ -29,4 +29,9 @@ export class AppComponent {
   onClick() {
     console.log('Click!');
   }
+
+  // tslint:disable-next-line:typedef
+  onBlur(str: string) {
+    this.inputValue = str;
+  }
 }
