@@ -8,30 +8,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  // number = 42;
-  // arr = [1, 2, 3];
-  //
-  // obj = {a: 1, b: 2, c: {d: 2}};
-  title = 'Dynamic title';
+  title = 'Initial';
 
-  inputValue = '';
-
-  constructor() {
-
-  }
-
-  // tslint:disable-next-line:typedef
-  onInput(event: KeyboardEvent) {
-    this.inputValue = (event.target as HTMLInputElement).value;
-  }
-
-  // tslint:disable-next-line:typedef
-  onClick() {
-    console.log('Click!');
-  }
-
-  // tslint:disable-next-line:typedef
-  onBlur(str: string) {
-    this.inputValue = str;
+  onInput(event: any) {
+    this.title = event.target.value;
   }
 }
