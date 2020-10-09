@@ -21,7 +21,12 @@ export class AppComponent {
   }
 
   // tslint:disable-next-line:typedef
-  onInput(event?) {
+  onInput(event?: any) {
     console.log('Event', event);
+    this.inputValue = event.target.value;
+  }
+
+  onClick() {
+    console.log('Click!');
   }
 }

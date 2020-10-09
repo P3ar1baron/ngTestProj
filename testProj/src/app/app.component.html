@@ -13,8 +13,10 @@
 <!--<p><strong>{{ 'Hello' + ' World' }}</strong></p>-->
 <!--<input type="text ">-->
 <!--<p><strong>{{}}</strong></p>-->
+<button (click)="onClick()">Click Me !</button>
 
-<input type="text" (input)="onInput()">
+
+<input type="text" (input)="onInput($event)">
 <p><strong>{{inputValue}}</strong></p>
 
 <hr>
