@@ -16,7 +16,7 @@
 <button (click)="onClick()">Click Me !</button>
 
 
-<input type="text" (input)="onInput($event)">
+<input type="text" (keyup.enter)="onInput($event)">
 <p><strong>{{inputValue}}</strong></p>
 
 <hr>
