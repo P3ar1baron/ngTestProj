@@ -11,13 +11,12 @@
 <!--<p><strong>{{ obj.a  }}</strong></p>-->
 <!--<p><strong>{{ 40 + 2  }}</strong></p>-->
 <!--<p><strong>{{ 'Hello' + ' World' }}</strong></p>-->
+<!--<input type="text ">-->
+<!--<p><strong>{{}}</strong></p>-->
 
-<img [src]="img" alt="">
+<input type="text" (input)="onInput()">
+<p><strong>{{inputValue}}</strong></p>
 
 <hr>
+
 <app-post></app-post>
-<!--<app-post></app-post>-->
-
-<hr>
-
-<app-post4></app-post4>
