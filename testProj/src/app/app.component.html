@@ -2,8 +2,8 @@
 
 
 <ul>
-  <li *ngFor="let n of arr">
-    {{n}}
+  <li *ngFor="let n of arr; let idx = index">
+    {{idx + 1}}   <strong>{{n}}</strong>
   </li>
 </ul>
 
