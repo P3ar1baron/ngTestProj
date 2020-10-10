@@ -1,12 +1,9 @@
 <h1>Hello Angular</h1>
 
 
-<button (click)="toggle = !toggle">Toggle</button>
-<button (click)="toggle = 111">Set 111</button>
-
-<div [ngSwitch]="toggle">
-  <p *ngSwitchCase="true" class="red">Lorem ipsum</p>
-  <p *ngSwitchCase="false" class="blue">Lorem ipsum. Lorem ipsum.</p>
-  <p *ngSwitchDefault>Lorem ipsum</p>
-</div>
+<ul>
+  <li *ngFor="let n of arr">
+    {{n}}
+  </li>
+</ul>
 
