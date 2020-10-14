@@ -27,7 +27,6 @@ export class PostFormComponent implements OnInit {
       };
 
       this.onAdd.emit(post);
-      console.log('New Post', post);
 
       this.title = this.text = '';
     }
