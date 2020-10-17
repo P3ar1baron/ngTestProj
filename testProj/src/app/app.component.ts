@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 export interface  Post {
-  title: string;
-  text: string;
-  id?: number;
+  title: string
+  text: string
+  id?: number
 }
 
 @Component({
@@ -15,12 +15,19 @@ export interface  Post {
 export class AppComponent {
   posts: Post[] = [
     {title: 'Хочу выучить Angular компоненты', text: 'Я все еще учу копонты', id: 1},
-    // {title: 'Следущий блок', text: 'Будет еще про директивы и пйав', id: 2}
-  ];
+    {title: 'Следущий блок', text: 'Будет еще про директивы и пйав', id: 2}
+  ]
 
   // tslint:disable-next-line:typedef
   updatePosts(post: Post) {
-    this.posts.unshift(post);
+    this.posts.unshift(post)
     // console.log('Post', post);
   }
+
+  removePost(id: number) {
+    console.log('Id to remove', id)
+    this.posts = this.posts.filter(p => p.id !== id)
+  }
+
+
 }
