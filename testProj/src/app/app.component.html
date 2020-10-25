@@ -8,4 +8,28 @@
   <p [appStyle]="'blue'" [dStyles]="{border: '1px solid red', borderRadius: '5px'}">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, excepturi.
   </p>
+
+  <button class="btn" (click)="isVisible = !isVisible">Toggle</button>
+
+<!--  <div *ngIf="isVisible" class="wrap">-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolore fugit inventore ipsum necessitatibus, nobis nulla porro tempore. Adipisci, labore.</p>-->
+<!--  </div>-->
+
+<!--  <ng-template [ngIf]="isVisible">-->
+<!--    <div class="wrap">-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolore fugit inventore ipsum necessitatibus, nobis nulla porro tempore. Adipisci, labore.</p>-->
+<!--    </div>-->
+<!--  </ng-template>-->
+
+
+<!--    <div class="wrap" *appIfnot="!isVisible">-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolore fugit inventore ipsum necessitatibus, nobis nulla porro tempore. Adipisci, labore.</p>-->
+<!--    </div>-->
+
+    <ng-template [appIfnot]="!isVisible">
+      <div class="wrap" >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolore fugit inventore ipsum necessitatibus, nobis nulla porro tempore. Adipisci, labore.</p>
+      </div>
+    </ng-template>
+
 </div>
