@@ -21,4 +21,12 @@ export class AppComponent {
 
   search = ''
   searchField = 'title'
+
+
+  addPost() {
+    this.posts.unshift({
+      title: 'Angular 8',
+      text: 'Vlad Angular'
+    })
+  }
 }
