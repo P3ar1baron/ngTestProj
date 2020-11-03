@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core'
-import {Observable} from 'rxjs'
+import {AppCounterService} from './services/app-counter.service'
 
 export  interface Post {
   title: string
@@ -13,5 +13,7 @@ export  interface Post {
 })
 
 export class AppComponent {
-  
+
+  constructor(public appCounterService: AppCounterService) {}
+
 }
