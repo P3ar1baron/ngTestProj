@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core'
-import {AppCounterService} from './services/app-counter.service'
-import {LocalCounterService} from "./services/local-counter.service";
+import {Component} from '@angular/core'
+import {interval, Subscription} from 'rxjs'
+import  {} from 'rxjs/operators'
 
 export  interface Post {
   title: string
@@ -11,14 +11,21 @@ export  interface Post {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [LocalCounterService]
 })
 
 export class AppComponent {
 
-  constructor(
-    public appCounterService: AppCounterService,
-    public localCounterService: LocalCounterService
-  ) {}
+  sub: Subscription
 
+  constructor() {
+    const intervalStream$ = interval(1000)
+
+    this.sub = intervalStream$.subscribe((value) => {
+      console.log(value)
+    })
+  }
+
+  stopInterval() {
+    this.sub.unsubscribe()
+  }
 }
