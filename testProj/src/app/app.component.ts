@@ -1,5 +1,5 @@
 import {Component} from '@angular/core'
-import {interval, Subscription} from 'rxjs'
+import {Subscription, Observable} from 'rxjs'
 // tslint:disable-next-line:import-spacing
 import  {map, filter} from 'rxjs/operators'
 
@@ -19,17 +19,17 @@ export class AppComponent {
   sub: Subscription
 
   constructor() {
-    const intervalStream$ = interval(1000)
+    const stream$ = new Observable(observer => {
 
-    this.sub = intervalStream$
-      .pipe(
-        // tslint:disable-next-line:no-bitwise triple-equals
-        filter(value => value % 2 === 0),
-        map((value) => `Mapped value ${value}`)
-      )
-      .subscribe((value) => {
-      console.log(value)
+      setInterval(() => {
+        observer.next(1)
+      }, 500)
     })
+
+    this.sub = stream$
+      .subscribe(value => {
+        console.log(value)
+      })
   }
 
   stopInterval() {
