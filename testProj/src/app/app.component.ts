@@ -1,6 +1,7 @@
 import {Component} from '@angular/core'
 import {interval, Subscription} from 'rxjs'
-import  {} from 'rxjs/operators'
+// tslint:disable-next-line:import-spacing
+import  {map, filter} from 'rxjs/operators'
 
 export  interface Post {
   title: string
@@ -20,7 +21,13 @@ export class AppComponent {
   constructor() {
     const intervalStream$ = interval(1000)
 
-    this.sub = intervalStream$.subscribe((value) => {
+    this.sub = intervalStream$
+      .pipe(
+        // tslint:disable-next-line:no-bitwise triple-equals
+        filter(value => value % 2 === 0),
+        map((value) => `Mapped value ${value}`)
+      )
+      .subscribe((value) => {
       console.log(value)
     })
   }
