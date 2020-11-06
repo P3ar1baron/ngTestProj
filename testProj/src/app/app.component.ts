@@ -23,16 +23,26 @@ export class AppComponent {
 
       setInterval(() => {
         observer.next(1)
-      }, 500)
+      }, 1500)
+
+      setInterval(() => {
+        observer.complete()
+      }, 2100)
+
+      setInterval(() => {
+        observer.error('smth went wrong')
+      }, 2000)
+
+      setInterval(() => {
+        observer.next(2)
+      }, 2500)
     })
 
     this.sub = stream$
-      .subscribe(value => {
-        console.log(value)
-      })
-  }
-
-  stopInterval() {
-    this.sub.unsubscribe()
+      .subscribe(
+        value => console.log('Next', value),
+        error => console.log('Error', error),
+        () => console.log('Complete')
+      )
   }
 }
