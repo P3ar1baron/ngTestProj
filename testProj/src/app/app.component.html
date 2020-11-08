@@ -1,11 +1,16 @@
+<nav class="navbar">
+  <h1>Angular Modules</h1>
+
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
+    <li routerLinkActive="active"><a routerLink="/about">About</a></li>
+  </ul>
+</nav>
+
 <div class="container">
-  <h1>RxJS Intro</h1>
+  <div class="card">
 
-  <button class="btn" (click)="stop()">Stop interval</button>
+    <router-outlet></router-outlet>
 
-
-  <button class="btn btn-danger" (click)="next()">Next value</button>
-
-
-
+  </div>
 </div>

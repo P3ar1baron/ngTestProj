@@ -1,28 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser'
-import { NgModule } from '@angular/core'
-import { CommonModule} from '@angular/common'
+import {BrowserModule} from '@angular/platform-browser'
+import {NgModule} from '@angular/core'
 
-import { AppComponent } from './app.component'
+import {AppComponent} from './app.component'
 import {FormsModule} from '@angular/forms'
-import {MultByPipe} from './pipes/mult-by.pipe';
-import { ExMarksPipe } from './pipes/ex-marks.pipe';
-import { FilterPipe } from './pipes/filter.pipe'
-import {AppCounterService} from './services/app-counter.service';
-import { CounterComponent } from './counter/counter.component'
+import {HomePageComponent} from './home-page/home-page.component'
+import {AppRoutingModule} from './app-routing.module'
+import {AboutPageComponent} from './about-page/about-page.component'
+import {AboutExtraPageComponent} from './about-page/about-extra-page/about-extra-page.component'
+import {ColorDirective} from './shared/color.directive'
+import {PageNamePipe} from './shared/page-name.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
-    MultByPipe,
-    ExMarksPipe,
-    FilterPipe,
-    CounterComponent
+    HomePageComponent,
+    AboutPageComponent,
+    AboutExtraPageComponent,
+    ColorDirective,
+    PageNamePipe
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
