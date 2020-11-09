@@ -22,15 +22,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76969162-974a-4e7d-95f5-075ab7bc4940" name="Default Changelist" comment="Clean project for pipes">
+    <list default="true" id="76969162-974a-4e7d-95f5-075ab7bc4940" name="Default Changelist" comment="Change module loading strategy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/about-page/about-extra-page/about-extra-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/about-page/about-extra-page/about-extra-page.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/about-page/about-extra-page/about-extra-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/about-page/about-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/about-page/about-page.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/about-page/about-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/about-page/about-page.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/app-routing.module.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testProj/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/testProj/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProj/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/testProj/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/testProj/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/home-page/home-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/home-page/home-page.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/home-page/home-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/shared/color.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/shared/page-name.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testProj/src/app/shared/shared.module.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -60,7 +81,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/01+Вводный" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -115,140 +136,20 @@
       <workItem from="1603644721321" duration="10143000" />
       <workItem from="1603659385105" duration="128000" />
       <workItem from="1603831469106" duration="2851000" />
-      <workItem from="1603917719376" duration="2291000" />
-    </task>
-    <task id="LOCAL-00001" summary="Add post component ts and markup">
-      <created>1602099563051</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1602099563051</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add styling and selector">
-      <created>1602100927358</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1602100927358</updated>
-    </task>
-    <task id="LOCAL-00003" summary="generate components via cli">
-      <created>1602101888653</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1602101888653</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add component with inline markup and styles">
-      <created>1602139914084</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1602139914084</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Initial push for feature branch">
-      <created>1602141282812</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1602141282812</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Practice interpolation&#10;Change git configuration">
-      <created>1602167631939</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1602167631939</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Set image changing after 5 seconds elapse">
-      <created>1602187911114</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1602187911114</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Use 1 way binding">
-      <created>1602188161718</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1602188161718</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Practice event binding">
-      <created>1602231634374</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1602231634374</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Make actions on click and input events">
-      <created>1602233900159</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1602233900159</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Make keyboard event">
-      <created>1602251041782</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1602251041782</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Add OnBlur event&#10;Use local name for event">
-      <created>1602253026344</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1602253026344</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Implemented 2 way binding">
-      <created>1602254966843</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1602254966843</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Implemented more convenient 2 way binding">
-      <created>1602256556482</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1602256556482</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Practice ngStyle directive">
-      <created>1602259301002</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1602259301002</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Use dynamic classes for styles">
-      <created>1602274026723</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1602274026723</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Use conditional directive">
-      <created>1602278535542</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1602278535542</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Use switch directive">
-      <created>1602321799121</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1602321799121</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Use for directive">
-      <created>1602324194694</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1602324194694</updated>
+      <workItem from="1603917719376" duration="2687000" />
+      <workItem from="1604005300193" duration="599000" />
+      <workItem from="1604179457996" duration="1931000" />
+      <workItem from="1604234007610" duration="286000" />
+      <workItem from="1604244211960" duration="7149000" />
+      <workItem from="1604349652101" duration="3526000" />
+      <workItem from="1604414517224" duration="5758000" />
+      <workItem from="1604527106870" duration="608000" />
+      <workItem from="1604583967964" duration="2962000" />
+      <workItem from="1604696402558" duration="543000" />
+      <workItem from="1604697026546" duration="4814000" />
+      <workItem from="1604835611073" duration="3527000" />
+      <workItem from="1604855008561" duration="10165000" />
+      <workItem from="1604957231015" duration="1787000" />
     </task>
     <task id="LOCAL-00020" summary="Output index">
       <created>1602326457234</created>
@@ -397,7 +298,203 @@
       <option name="project" value="LOCAL" />
       <updated>1603833386553</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Practice pipes">
+      <created>1603920150851</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1603920150851</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Practice new pipes">
+      <created>1604180704866</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1604180704866</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add new pipe">
+      <created>1604234241756</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1604234241756</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add logic in custom pipe and use it">
+      <created>1604252972290</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1604252972290</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Generate pipe with CLI">
+      <created>1604253828590</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604253828590</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Clean app component">
+      <created>1604253960101</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1604253960101</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Craft filtering pipe">
+      <created>1604257837824</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1604257837824</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Edit optimization mode of filter pipe&#10;Create addPost method">
+      <created>1604259091595</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1604259091595</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Clean app component">
+      <created>1604350004287</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1604350004287</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Practice async pipes">
+      <created>1604350767448</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1604350767448</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Use classic approach for streams">
+      <created>1604351096557</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1604351096557</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Clean project for services practice">
+      <created>1604353464662</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1604353464662</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add CounterService">
+      <created>1604415495876</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1604415495876</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Register local service">
+      <created>1604416284754</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1604416284754</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Add Counter component with injected services">
+      <created>1604420587120</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1604420587120</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Inject LogService in AppCounter service">
+      <created>1604423306441</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1604423306441</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Clean template for RxJs">
+      <created>1604584031405</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1604584031405</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Create interval and logic for unsubscribing">
+      <created>1604584740411</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1604584740411</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Practice operators">
+      <created>1604586233546</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1604586233546</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Create own stream">
+      <created>1604587138570</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1604587138570</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Practice operators for own stream">
+      <created>1604704673933</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1604704673933</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Implement next method for working with stream">
+      <created>1604706724150</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1604706724150</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Prepared structure for modules practice except about main and extra page components">
+      <created>1604839241346</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1604839241347</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Add styles and added about main and extra pages">
+      <created>1604857673464</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1604857673465</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Add AboutPage module and Shared module">
+      <created>1604865266659</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1604865266659</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Add lazy loading of about page module">
+      <created>1604867208206</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1604867208206</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Amend hardcode for route">
+      <created>1604867927242</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1604867927242</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Change module loading strategy">
+      <created>1604868719513</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1604868719513</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,49 +517,51 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Use dynamic classes for styles" />
-    <MESSAGE value="Use conditional directive" />
-    <MESSAGE value="Use switch directive" />
-    <MESSAGE value="Use for directive" />
-    <MESSAGE value="Output index" />
-    <MESSAGE value="Output object on the view via ngFor directive" />
-    <MESSAGE value="Clean markup and component" />
-    <MESSAGE value="Update global styles" />
-    <MESSAGE value="Remove unnecessary components" />
-    <MESSAGE value="Add new components and change some markup" />
-    <MESSAGE value="Use Input directive to send post variable to child component&#10;Bind 1 way to post variable" />
-    <MESSAGE value="Use 2way binding for title and text variables&#10;&#10;Add click event and addPost event handler&#10;&#10;Use Output directive with EventEmitter for Posts" />
-    <MESSAGE value="Add updatePosts event handler" />
-    <MESSAGE value="Send html to app component&#10;Use ViewChild directive&#10;Add focustitle event handler" />
-    <MESSAGE value="use ng-template tag&#10;use contentchild directive" />
-    <MESSAGE value="Implement OnChanges interface" />
-    <MESSAGE value="Remove semicolons and edit linter config" />
-    <MESSAGE value="Add remove functionality for posts" />
-    <MESSAGE value="Implement OnInit, change changeDetection strategy" />
-    <MESSAGE value="Add subheader and styles for it" />
-    <MESSAGE value="Remove post and post-form components" />
-    <MESSAGE value="Add StyleDirective with event handlers" />
-    <MESSAGE value="Use input parameters for actions in directives&#10;Use HostBinding" />
-    <MESSAGE value="Add custom directive" />
-    <MESSAGE value="Clean project for pipes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean project for pipes" />
+    <MESSAGE value="Add new pipe" />
+    <MESSAGE value="Add logic in custom pipe and use it" />
+    <MESSAGE value="Generate pipe with CLI" />
+    <MESSAGE value="Craft filtering pipe" />
+    <MESSAGE value="Edit optimization mode of filter pipe&#10;Create addPost method" />
+    <MESSAGE value="Clean app component" />
+    <MESSAGE value="Practice async pipes" />
+    <MESSAGE value="Use classic approach for streams" />
+    <MESSAGE value="Clean project for services practice" />
+    <MESSAGE value="Add CounterService" />
+    <MESSAGE value="Register local service" />
+    <MESSAGE value="Add Counter component with injected services" />
+    <MESSAGE value="Inject LogService in AppCounter service" />
+    <MESSAGE value="Clean template for RxJs" />
+    <MESSAGE value="Create interval and logic for unsubscribing" />
+    <MESSAGE value="Practice operators" />
+    <MESSAGE value="Create own stream" />
+    <MESSAGE value="Practice operators for own stream" />
+    <MESSAGE value="Implement next method for working with stream" />
+    <MESSAGE value="Prepared structure for modules practice except about main and extra page components" />
+    <MESSAGE value="Add styles and added about main and extra pages" />
+    <MESSAGE value="Add AboutPage module and Shared module" />
+    <MESSAGE value="Add lazy loading of about page module" />
+    <MESSAGE value="Amend hardcode for route" />
+    <MESSAGE value="Change module loading strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change module loading strategy" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1602970539448">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1604350849851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1602970539448" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603626215497">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604350849851" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604959075597">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603626215497" />
-    <state x="147" y="65" key="DiffContextDialog" timestamp="1602188178680">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604959075597" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1604867225357">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604867225357" />
     <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1602188178680" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1602093152289">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1604958935423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604958935423" />
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602093152289" />
     <state x="643" y="310" key="Github.ShareDialog" timestamp="1602093264181">
       <screen x="0" y="0" width="1536" height="824" />
@@ -484,14 +583,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602101907104" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1602165880874">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1604696944379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604696944379" />
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602165880874" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603833391344">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604868746544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1603833391344" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1604868746544" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602327957818" />
     <state x="581" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1602141193168">
       <screen x="0" y="0" width="1536" height="824" />
