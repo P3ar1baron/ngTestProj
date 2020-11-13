@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core'
 import {FormArray, FormControl, FormGroup, Validators} from '@angular/forms'
-import {MyValidators} from "./my.validators";
+import {MyValidators} from './my.validators'
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
         Validators.email,
         Validators.required,
         MyValidators.restrictedEmails
-      ]),
+      ], [MyValidators.uniqueEmail]),
       password: new FormControl('', [
         Validators.required,
         Validators.minLength(6)
@@ -35,6 +35,8 @@ export class AppComponent implements OnInit {
     const formData = {...this.form.value}
 
     console.log('Form data: ', formData)
+
+    this.form.reset()
   }
 
   setCapital() {
