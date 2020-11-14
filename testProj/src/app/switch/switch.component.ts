@@ -1,5 +1,5 @@
-import {Component, forwardRef, OnInit, Provider} from '@angular/core'
-import {NG_VALUE_ACCESSOR} from '@angular/forms'
+import {Component, forwardRef, Provider} from '@angular/core'
+import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms'
 
 
 const VALUE_ACCESSOR: Provider = {
@@ -10,18 +10,30 @@ const VALUE_ACCESSOR: Provider = {
 @Component({
   selector: 'app-switch',
   templateUrl: './switch.component.html',
-  styleUrls: ['./switch.component.scss']
+  styleUrls: ['./switch.component.scss'],
+  providers: [VALUE_ACCESSOR]
 })
-export class SwitchComponent implements OnInit {
+export class SwitchComponent implements ControlValueAccessor {
 
   state = 'off'
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  private onChange = (value: any) => {}
 
   setState(state: string) {
+    this.state = state
+
+    this.onChange(this.state)
+  }
+
+  registerOnChange(fn: any): void {
+    this.onChange = fn
+  }
+
+  registerOnTouched(fn: any): void {
+  }
+
+  writeValue(obj: any): void {
     this.state = state
   }
 
