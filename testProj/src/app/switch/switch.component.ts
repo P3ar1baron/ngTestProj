@@ -15,7 +15,7 @@ const VALUE_ACCESSOR: Provider = {
 })
 export class SwitchComponent implements ControlValueAccessor {
 
-  state = 'off'
+  state = 'on'
 
 
   private onChange = (value: any) => {}
@@ -33,7 +33,7 @@ export class SwitchComponent implements ControlValueAccessor {
   registerOnTouched(fn: any): void {
   }
 
-  writeValue(obj: any): void {
+  writeValue(state: any): void {
     this.state = state
   }
 

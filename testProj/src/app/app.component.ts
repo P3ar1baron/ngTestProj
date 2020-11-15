@@ -7,4 +7,8 @@ import {Component, OnInit} from '@angular/core'
 })
 export class AppComponent  {
   appState = 'on'
+
+  handleChange() {
+    console.log(this.appState)
+  }
 }
