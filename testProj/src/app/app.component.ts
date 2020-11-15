@@ -1,12 +1,7 @@
 import {Component, OnInit} from '@angular/core'
 import {HttpClient} from '@angular/common/http'
-import {delay} from "rxjs/operators";
-
-export interface ToDo {
-  completed: boolean
-  title: string
-  id?: number
-}
+import {delay} from 'rxjs/operators'
+import {ToDo} from './todos.service'
 
 
 @Component({
