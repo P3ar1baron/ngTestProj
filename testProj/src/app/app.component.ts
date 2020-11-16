@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
         this.todos = todos
         this.loading = false
       }, error => {
-        console.log(error.message)
+        this.error = error.message
       })
   }
 
