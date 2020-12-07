@@ -6,13 +6,15 @@ import { ModalComponent } from './modal/modal.component'
 import {RefDirective} from './ref.directive';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment'
+import {CounterComponent} from "./counter/counter.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalComponent,
-    RefDirective
+    RefDirective,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
