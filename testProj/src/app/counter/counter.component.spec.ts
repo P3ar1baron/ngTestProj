@@ -1,10 +1,11 @@
 import {CounterComponent} from './counter.component'
+import {FormBuilder} from "@angular/forms";
 
 describe('CounterComponent', () => {
   let component: CounterComponent
 
   beforeEach(() => {
-     component = new CounterComponent()
+     component = new CounterComponent(new FormBuilder())
   })
 
   it('should increment counter by 1', () => {
@@ -15,6 +16,29 @@ describe('CounterComponent', () => {
   it('should decrement counter by 1', () => {
     component.decrement()
     expect(component.counter).toBe(-1)
+  })
+
+  it('should increment value by event emitter', () => {
+    let result = null
+    component.counterEmitter.subscribe(v => result = v)
+
+    component.increment()
+
+    expect(result).toBe(1)
+
+  })
+
+  it('should create form with 2 controls', () => {
+    expect(component.form.contains('login')).toBeTruthy(true)
+    expect(component.form.contains('email')).toBeTruthy(true)
+  })
+
+  it('',() => {
+    const control = component.form.get('login')
+
+    control.setValue('')
+
+    expect(control.valid).toBeFalsy()
   })
 
 })
