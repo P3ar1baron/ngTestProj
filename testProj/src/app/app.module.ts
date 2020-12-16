@@ -7,6 +7,7 @@ import {RefDirective} from './ref.directive';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment'
 import {CounterComponent} from "./counter/counter.component";
+import { PostsComponent } from './posts/posts/posts.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {CounterComponent} from "./counter/counter.component";
     AppComponent,
     ModalComponent,
     RefDirective,
-    CounterComponent
+    CounterComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
