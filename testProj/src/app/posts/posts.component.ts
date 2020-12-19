@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import {PostsService} from "./posts.service";
+import {Component, OnInit} from '@angular/core';
+import {PostsService} from './posts.service';
 
 @Component({
-  templateUrl: `Posts component`,
-  selector: 'app-posts',
+  template: `Posts component`,
+  selector: 'app-posts'
 })
 export class PostsComponent implements OnInit {
-
   posts = []
   message: string
 
@@ -14,20 +13,20 @@ export class PostsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.service.fetch().subscribe( p => {
+    this.service.fetch().subscribe(p => {
       this.posts = p
     })
   }
 
   add(title: string) {
     const post = { title }
-    this.service.create(post).subscribe( () => {
-      this.posts.push(post)
+    this.service.create(post).subscribe(p => {
+      this.posts.push(p)
     }, err => this.message = err)
   }
 
   delete(id) {
-    if (window.confirm('Are you sure ?')) {
+    if (window.confirm('Are you sure?')) {
       this.service.remove(id).subscribe()
     }
   }
